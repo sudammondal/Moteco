@@ -1,0 +1,25 @@
+.AboutWrap {
+    margin: 60px 0;
+    .AboutGrid {
+        display: grid;
+        grid-template-columns: 50% auto;
+        .AboutImg {
+            background-image: url(../image/aboutimg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .AboutTitle {
+            padding-left: 15px;
+            background-color: #272C49;
+            padding: 50px;
+            .AboutHead {
+                color: #fff;
+            }
+            .AboutPrag {
+                margin-bottom: 0;
+                color: #fff;
+            }
+        }
+    }
+}

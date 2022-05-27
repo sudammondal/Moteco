@@ -1,0 +1,102 @@
+.footerWrap {
+  background-color: #000000f0;
+  padding-top: 70px; }
+  .footerWrap .CtmContiner {
+    padding-bottom: 50px; }
+    .footerWrap .CtmContiner .footerGrid {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .footerWrap .CtmContiner .footerGrid .FooterInner .FooterLogoimg {
+        margin-bottom: 40px; }
+        .footerWrap .CtmContiner .footerGrid .FooterInner .FooterLogoimg a .FooterIMG {
+          max-width: 66.666667%;
+          width: 100%; }
+      .footerWrap .CtmContiner .footerGrid .FooterInner .FooterSubmit {
+        padding-left: 23px; }
+        .footerWrap .CtmContiner .footerGrid .FooterInner .FooterSubmit .submitHead {
+          color: #fff;
+          font-weight: 700;
+          margin-top: 0;
+          margin-bottom: 26px;
+          font-family: 'Oxygen', sans-serif;
+          font-size: 1.2rem;
+          line-height: 1.5; }
+        .footerWrap .CtmContiner .footerGrid .FooterInner .FooterSubmit .footerPra {
+          font-family: 'Oxygen', sans-serif;
+          font-size: 1.1rem;
+          line-height: 1.5;
+          margin-bottom: 30px;
+          color: #fff; }
+        .footerWrap .CtmContiner .footerGrid .FooterInner .FooterSubmit .FooTerICon .FterIcon {
+          padding: 10px;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          border-radius: 50%;
+          background-color: white;
+          margin-right: 0.5rem;
+          margin-bottom: 1rem;
+          padding: 0.5rem;
+          height: 2.5rem;
+          width: 2.5rem; }
+          .footerWrap .CtmContiner .footerGrid .FooterInner .FooterSubmit .FooTerICon .FterIcon span {
+            color: #000; }
+  .footerWrap .footerBtm {
+    padding: 15px 0;
+    background-color: #040404; }
+    .footerWrap .footerBtm .footerBtmBar {
+      text-align: center; }
+      .footerWrap .footerBtm .footerBtmBar .footerBtmPra {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        margin: 0;
+        text-align: center; }
+
+.up_icon {
+  position: fixed;
+  bottom: 10px;
+  right: 18px;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0; }
+  .up_icon a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .up_icon a .UpIcon {
+      font-size: 20px; }
+  .up_icon:hover a {
+    background-color: rgba(0, 0, 0, 0.5); }
+
+.up_iconFixd {
+  bottom: 18px;
+  right: 18px;
+  z-index: 1;
+  opacity: 1; }

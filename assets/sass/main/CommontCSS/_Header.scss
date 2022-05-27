@@ -1,0 +1,155 @@
+.Header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 888;
+    transition: all 0.5s ease;
+    background-color: transparent;
+    &.headerFixed {
+        padding: 10px 0;
+        background-color: #000000d1;
+        transition: all 0.5s ease;
+        box-shadow: 0px 4px 6px 0px rgba(12, 0, 46, 0.06);
+        .navbar {
+            padding: 0;
+            transition: all 0.5s ease;
+            .CtmCont {
+                .navbar-brand {
+                    outline: none;
+                    img {
+                        width: auto;
+                       height: 2.5rem;
+                    }
+                }
+                .NavCollap {
+                    .NavberNav {
+                        .nav-item {
+                            .nav-link {
+                                padding: 12px 0;
+                                &::before {
+                                    bottom: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar {
+        padding: 5px 0;
+        transition: all 0.5s;
+        .CtmCont { 
+            padding: 0px; 
+            .navbar-brand {
+                img {
+                    height: 5.1rem;
+                    width: 100%;
+                    transition: all 0.5s;
+                }
+            }
+
+            .NavCollap {
+                .NavberNav {
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    .nav-item {
+                        .nav-link {
+                            font-family: 'Oxygen', sans-serif;
+                            font-size: 1.1rem;
+                            line-height: 1.5;
+                            color: #fff;
+                            font-weight: 400;
+                            padding: 15px 0;
+                            margin: 0 16px;
+                            transition: all 0.1s linear;
+                            position: relative;
+                            transition: all 0.5s ease;
+                        }
+
+                        &.dropdown {
+                            .dropdown-menu {
+                                border-bottom-left-radius: 0px;
+                                border-bottom-right-radius: 0px;
+                                border: 0;
+                                box-shadow: 0 0 5px 0 #00000033;
+                                background-color: #252c32f7;
+                                li {
+                                    transition: all 0.5s ease;
+                                   
+                                    a { 
+                                        color: #fff !important;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        &:hover {
+                                            color: #ffffff;
+                                            background-color: #b09141;
+
+                                        }
+                                    }
+                                }
+                            }
+                            .dropdown-toggle{
+                                &:after {
+                                    margin-bottom: -2px;
+                                }
+                            }
+                        }
+
+                        &.dropdown {
+                            &:hover {
+                                .dropdown-menu {
+                                    display: block;
+                                }
+                                li {
+                                    a {
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.language {
+                            .nav-link {
+                                margin-left: 0;
+                            }
+
+                            .dropdown-menu {
+                                right: 0;
+                            }
+                        }
+                        &.language {
+                            .formSelect {
+                                background-color: #ffffff;
+                                border: 1px solid transparent;
+                                text-shadow: none;
+                                border-radius: 25px;
+                                color: #000;
+                                text-align: center;
+                                padding: 6px 30px;
+                                font-weight: 600;
+                                cursor: pointer;
+                                line-height: 1.4285;
+                                text-transform: uppercase;
+                                position: relative;
+                                z-index: 1;
+                                overflow: hidden;
+                                transition: 0.5s ease;
+                                outline: none;
+                                margin-left: 15px;
+                                &:hover {
+                                    color: #ffffff;
+                                    background-color: #b09141;
+                                }
+                            }
+                        }
+                    }
+                  
+                }
+            }
+        }
+    }
+}

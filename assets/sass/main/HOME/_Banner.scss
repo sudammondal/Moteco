@@ -1,0 +1,78 @@
+.BannerWrap { 
+    .SliderBanner { 
+        height: 100vh;
+        background-color: #000000;
+        position: relative;
+        overflow-x: hidden;
+        width: 100%;
+        .main_bannerSlid { 
+            .banner_img {
+                height: 100vh;
+                width: 100%;
+            }
+        }
+        .BannerMinWrap { 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .BannerInner {
+                width: 100%;
+                margin: 0 auto;
+                .Banner_head {
+                    text-align: left;
+                    color: #fff;
+                    font-size: 4.6rem;
+                    line-height: 1.1;
+                    font-weight: 700;
+                }
+                .BannerPrag {
+                    color: #fff;
+                    font-size: 1.2rem;
+                    line-height: 1.5;
+                    font-size: 19px;
+                    margin-bottom: 1rem;
+                    
+                }
+                .ButtonWrap {
+                    .ButtoN {
+                        background-color: #ffffff;
+                        border: 1px solid #ffffff;
+                        text-shadow: none;
+                        border-radius: 25px;
+                        color: #000;
+                        text-align: center;
+                        padding: 10px 30px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        cursor: pointer;
+                        line-height: 1.4285;
+                        text-transform: uppercase;
+                        position: relative;
+                        z-index: 1;
+                        overflow: hidden;
+                        transition: 0.5s ease;
+                        outline: none;
+                        display: inline-block;
+                        box-shadow: 0 2px 2px 0 #00000033;
+                        margin-top: 10px;
+                        &:hover {
+                            color: #fff;
+                            box-shadow: 0 2px 2px 0 #00000033;
+                            transform: scale(1.05); 
+                            border: 1px solid #b09141;
+                            background-color: #b09141;
+                        }
+                    }
+        
+                }
+        
+            }
+        }
+    
+    }
+}
