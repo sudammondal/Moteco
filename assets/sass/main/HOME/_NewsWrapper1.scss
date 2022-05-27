@@ -1,135 +1,134 @@
-// .NewsWrapper1 {
-//     background-color: #f0f2f5;
-//     padding: 60px 0;
-//     .NewsInner{
-//         border: 1px solid #ddd;
-//         box-shadow: 0 0 10px 0 #dbdbdb;
-//         border-radius: 5px;
-//         overflow: hidden;
-//             .classic { 
-//                 position: relative;
-//                 overflow: hidden;
-//                 width: 100%;
-//                 .blog_img {
-//                     &:focus {
-//                         outline: none;
-//                     }
-//                 }
-//                .img_overlay {
-//                    &:before,
-//                    &:after {
-//                     background: #b09141;
-//                     width: 25%;
-//                     position: absolute;
-//                     content: '';
-//                     opacity: 0;
-//                     -webkit-transition: all 0.3s steps(4);
-//                     transition: all 0.3s steps(4);
-//                     z-index: 1;
-//                     bottom: 100%;
-//                     top: 0;
-//                     }
-//                 }
-//                 &:before,
-//                 &::after {
-//                     background: #b09141;
-//                     width: 25%;
-//                     position: absolute;
-//                     content: '';
-//                     opacity: 0;
-//                     transition: all 0.3s steps(4);
-//                     z-index: 1;
-//                     bottom: 100%;
-//                     top: 0;
-//                 }
-//                 &::before {
-//                     left: 0;
-//                     transition-delay: 0s;
-//                 }
-//                 &::after {
-//                     left: 25%;
-//                     transition-delay: 0.025s !important;
-//                 }
-//                 .img_overlay {
-//                     &::before {
-//                         left: 50%;
-//                         transition-delay: 0.05s !important;
-//                     }
-//                 }
-//                 .img_overlay {
-//                     &::after {
-//                         left: 75%;
-//                         transition-delay: 0.15s !important;
-//                     }
-//                 }
-//                 &:hover {
-//                     &::before,
-//                     &::after {
-//                         bottom: 0;
-//                         opacity: 0.5;
-//                     }
-//                 }
-//                 .img_overlay{
-//                     &::before,
-//                     &::after {
-//                         background: #b09141 !important;
-//                         width: 25%;
-//                         position: absolute;
-//                         content: '';
-//                         opacity: 0;
-//                         -webkit-transition: all 0.3s steps(4);
-//                         transition: all 0.3s steps(4);
-//                         z-index: 1;
-//                         bottom: 100%;
-//                         top: 0;
-//                     }
-//                 }
-//                 &:hover {
-//                     .img_overlay{
-//                         &::before,
-//                         &::after {
-//                             bottom: 0;
-//                             opacity: 0.5;
-//                         }
-//                     }
-//                 }
+.NewsWrapper1 {
+    background-color: #f0f2f5;
+    padding: 60px 0;
+    .NewsInner{
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px 0 #dbdbdb;
+        border-radius: 5px;
+        overflow: hidden;
+        .classic { 
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            .blog_img {
+                &:focus {
+                    outline: none;
+                }
+            }
+            .img_overlay {
+                &:before,
+                &:after {
+                background: #b09141;
+                width: 25%;
+                position: absolute;
+                content: '';
+                opacity: 0;
+                -webkit-transition: all 0.3s steps(4);
+                transition: all 0.3s steps(4);
+                z-index: 1;
+                bottom: 100%;
+                top: 0;
+                }
+            }
+            &:before,
+            &::after {
+                background: #b09141;
+                width: 25%;
+                position: absolute;
+                content: '';
+                opacity: 0;
+                transition: all 0.3s steps(4);
+                z-index: 1;
+                bottom: 100%;
+                top: 0;
+            }
+            &::before {
+                left: 0;
+                transition-delay: 0s;
+            }
+            &::after {
+                left: 25%;
+                transition-delay: 0.025s !important;
+            }
+            .img_overlay {
+                &::before {
+                    left: 50%;
+                    transition-delay: 0.05s !important;
+                }
+            }
+            .img_overlay {
+                &::after {
+                    left: 75%;
+                    transition-delay: 0.15s !important;
+                }
+            }
+            &:hover {
+                &::before,
+                &::after {
+                    bottom: 0;
+                    opacity: 0.5;
+                }
+            }
+            .img_overlay{
+                &::before,
+                &::after {
+                    background: #b09141 !important;
+                    width: 25%;
+                    position: absolute;
+                    content: '';
+                    opacity: 0;
+                    -webkit-transition: all 0.3s steps(4);
+                    transition: all 0.3s steps(4);
+                    z-index: 1;
+                    bottom: 100%;
+                    top: 0;
+                }
+            }
+            &:hover {
+                .img_overlay{
+                    &::before,
+                    &::after {
+                        bottom: 0;
+                        opacity: 0.5;
+                    }
+                }
+            }
+
+
+        }
+        .blog_details {
+            padding: 15px;
+            background-color: #fff;
+            .time {
+                color: #000;
+                margin-top: 25px;
+                text-transform: capitalize;
+                font-weight: 700;
+                letter-spacing: 0.03em;
+                font-family: 'Oxygen', sans-serif;
+                font-size: 1.2rem;
+                line-height: 1.5;
+                margin: 5px 0;
+            }
+            .lang_blog {
+                color: #222;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                letter-spacing: 0.03em;
+                margin-top: 10px;
+                transition: all 0.5s ease;
+                max-width: 300px;
+            }
+            a {
+                margin-bottom: 15px;
+                transition: all 0.5s ease;
+                &:hover {
+                    color: red;
+                }
+            }
+            
+        }
+    }
     
-    
-//             }
-//             .blog_details {
-//                 padding: 15px;
-//                 background-color: #fff;
-//                 .time {
-//                     color: #000;
-//                     margin-top: 25px;
-//                     text-transform: capitalize;
-//                     font-weight: 700;
-//                     letter-spacing: 0.03em;
-//                     font-family: 'Oxygen', sans-serif;
-//                     font-size: 1.2rem;
-//                     line-height: 1.5;
-//                     margin: 5px 0;
-//                 }
-//                 .lang_blog {
-//                     color: #222;
-//                     font-size: 16px;
-//                     font-weight: 400;
-//                     line-height: 1.5;
-//                     letter-spacing: 0.03em;
-//                     margin-top: 10px;
-//                     transition: all 0.5s ease;
-//                     max-width: 300px;
-//                 }
-//                 a {
-//                     margin-bottom: 15px;
-//                     transition: all 0.5s ease;
-//                     &:hover {
-//                         color: red;
-//                     }
-//                 }
-                
-//             }
-//         }
-    
-    
-// }
+}

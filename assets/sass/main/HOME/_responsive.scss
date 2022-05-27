@@ -52,6 +52,10 @@
     .Header {
         .navbar {
             .CtmCont {
+                .navbar-brand {
+                    img {
+                    height: 4.1rem; }
+                }
                 .NavCollap {
                     .NavberNav {
                         height: 373px;
@@ -81,6 +85,79 @@
         }
     }
     
+
+    .BannerWrap .SliderBanner .BannerMinWrap .BannerInner .Banner_head{
+        font-size: 50px;
+    }
+    .BannerWrap .SliderBanner .BannerMinWrap .BannerInner .BannerPrag {
+        font-size: 14px;
+    }
+    .BannerWrap .SliderBanner .BannerMinWrap .BannerInner .ButtonWrap .ButtoN {
+        padding: 8px 23px;
+    }
+    .cardWrap .CardGrig.CardGridCTM {
+        grid-template-columns: 100%;
+    }
+    .cardWrap .CardGrig .CardItemsIMG {
+        padding-right: 0px;
+        margin: 0;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .cardWrap .CardGrig {
+        grid-template-columns: 100%;
+    }
+ 
+    .cardWrap .CardGrig .CardItemsIMG {
+        padding-right: 0px;
+        margin: 0;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM {
+        padding-right: 0px;
+        margin: 0;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .cardWrap .CardGrig .CardItemsIMG img {
+        width: 100%;
+    }
+    .cardWrap .CardGrig .CardItems {
+        margin-top: 20px;
+        padding-left: 0px;
+        border-left: 0px solid #F7F8F8;
+        text-align: center;
+    }
+    .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM img {
+        width: 100%;
+    }
+    .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM {
+        img {
+            width: 100%;
+        }
+    }
+    .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM {
+      margin: 0;
+      padding: 0;
+    }
+    .cardWrap .CardGrig .CardItems.ItemsCTM {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-left: 0px;
+        border-left: 0px solid #F7F8F8;
+        text-align: center;
+    }
+    .AboutWrap .AboutGrid {
+        grid-template-columns: 100%;
+    }
+    .NewsWrapper .NewsGrid .NewsGtidItems .card {
+        margin-bottom: 20px;
+    }
+
     .footerWrap {
         .CtmContiner {
             .footerGrid {

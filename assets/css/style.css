@@ -147,7 +147,10 @@ body {
           margin-left: 15px; }
           .Header .navbar .CtmCont .NavCollap .NavberNav .nav-item.language .formSelect:hover {
             color: #ffffff;
-            background-color: #b09141; }
+            background-color: #b09141;
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05); }
 
 .footerWrap {
   background-color: #000000f0;
@@ -269,8 +272,10 @@ body {
   overflow-x: hidden;
   width: 100%; }
   .BannerWrap .SliderBanner .main_bannerSlid .banner_img {
-    height: 100vh;
-    width: 100%; }
+    height: 100vh; }
+    .BannerWrap .SliderBanner .main_bannerSlid .banner_img img {
+      width: 100% !important;
+      height: auto; }
   .BannerWrap .SliderBanner .BannerMinWrap {
     position: absolute;
     top: 0;
@@ -389,6 +394,15 @@ body {
       transition: all 0.5s ease;
       cursor: pointer;
       overflow: hidden; }
+      .cardWrap .CardGrig .CardItemsIMG img {
+        height: 100%; }
+      .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM {
+        margin-right: 0px;
+        margin-left: 15px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; }
     .cardWrap .CardGrig .CardItems {
       padding-left: 15px;
       border-left: 2px solid #F7F8F8;
@@ -409,9 +423,127 @@ body {
         color: #000;
         font-weight: 500;
         font-size: 16px; }
+      .cardWrap .CardGrig .CardItems.ItemsCTM {
+        padding-left: 0px;
+        border-left: 0px solid #F7F8F8;
+        border-right: 2px solid #F7F8F8;
+        padding-right: 15px;
+        text-align: right; }
     .cardWrap .CardGrig:hover {
       -webkit-box-shadow: 0 0 30px 0 #00000026;
       box-shadow: 0 0 30px 0 #00000026; }
+    .cardWrap .CardGrig.CardGridCTM {
+      -ms-grid-columns: auto 40%;
+      grid-template-columns: auto 40%; }
+
+.NewsWrapper1 {
+  background-color: #f0f2f5;
+  padding: 60px 0; }
+  .NewsWrapper1 .NewsInner {
+    border: 1px solid #ddd;
+    -webkit-box-shadow: 0 0 10px 0 #dbdbdb;
+    box-shadow: 0 0 10px 0 #dbdbdb;
+    border-radius: 5px;
+    overflow: hidden; }
+    .NewsWrapper1 .NewsInner .classic {
+      position: relative;
+      overflow: hidden;
+      width: 100%; }
+      .NewsWrapper1 .NewsInner .classic .blog_img:focus {
+        outline: none; }
+      .NewsWrapper1 .NewsInner .classic .img_overlay:before, .NewsWrapper1 .NewsInner .classic .img_overlay:after {
+        background: #b09141;
+        width: 25%;
+        position: absolute;
+        content: '';
+        opacity: 0;
+        -webkit-transition: all 0.3s steps(4);
+        -o-transition: all 0.3s steps(4);
+        transition: all 0.3s steps(4);
+        z-index: 1;
+        bottom: 100%;
+        top: 0; }
+      .NewsWrapper1 .NewsInner .classic:before, .NewsWrapper1 .NewsInner .classic::after {
+        background: #b09141;
+        width: 25%;
+        position: absolute;
+        content: '';
+        opacity: 0;
+        -webkit-transition: all 0.3s steps(4);
+        -o-transition: all 0.3s steps(4);
+        transition: all 0.3s steps(4);
+        z-index: 1;
+        bottom: 100%;
+        top: 0; }
+      .NewsWrapper1 .NewsInner .classic::before {
+        left: 0;
+        -webkit-transition-delay: 0s;
+        -o-transition-delay: 0s;
+        transition-delay: 0s; }
+      .NewsWrapper1 .NewsInner .classic::after {
+        left: 25%;
+        -webkit-transition-delay: 0.025s !important;
+        -o-transition-delay: 0.025s !important;
+        transition-delay: 0.025s !important; }
+      .NewsWrapper1 .NewsInner .classic .img_overlay::before {
+        left: 50%;
+        -webkit-transition-delay: 0.05s !important;
+        -o-transition-delay: 0.05s !important;
+        transition-delay: 0.05s !important; }
+      .NewsWrapper1 .NewsInner .classic .img_overlay::after {
+        left: 75%;
+        -webkit-transition-delay: 0.15s !important;
+        -o-transition-delay: 0.15s !important;
+        transition-delay: 0.15s !important; }
+      .NewsWrapper1 .NewsInner .classic:hover::before, .NewsWrapper1 .NewsInner .classic:hover::after {
+        bottom: 0;
+        opacity: 0.5; }
+      .NewsWrapper1 .NewsInner .classic .img_overlay::before, .NewsWrapper1 .NewsInner .classic .img_overlay::after {
+        background: #b09141 !important;
+        width: 25%;
+        position: absolute;
+        content: '';
+        opacity: 0;
+        -webkit-transition: all 0.3s steps(4);
+        -o-transition: all 0.3s steps(4);
+        transition: all 0.3s steps(4);
+        z-index: 1;
+        bottom: 100%;
+        top: 0; }
+      .NewsWrapper1 .NewsInner .classic:hover .img_overlay::before, .NewsWrapper1 .NewsInner .classic:hover .img_overlay::after {
+        bottom: 0;
+        opacity: 0.5; }
+    .NewsWrapper1 .NewsInner .blog_details {
+      padding: 15px;
+      background-color: #fff; }
+      .NewsWrapper1 .NewsInner .blog_details .time {
+        color: #000;
+        margin-top: 25px;
+        text-transform: capitalize;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 5px 0; }
+      .NewsWrapper1 .NewsInner .blog_details .lang_blog {
+        color: #222;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        margin-top: 10px;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        max-width: 300px; }
+      .NewsWrapper1 .NewsInner .blog_details a {
+        margin-bottom: 15px;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease; }
+        .NewsWrapper1 .NewsInner .blog_details a:hover {
+          color: red; }
 
 .NewsWrapper {
   padding: 60px 0;
@@ -529,6 +661,8 @@ body {
     border-top: 1px solid #ddd; } }
 
 @media (max-width: 768px) {
+  .Header .navbar .CtmCont .navbar-brand img {
+    height: 4.1rem; }
   .Header .navbar .CtmCont .NavCollap .NavberNav {
     height: 373px;
     overflow-x: scroll;
@@ -542,6 +676,61 @@ body {
   .navbar-light .navbar-toggler {
     color: transparent;
     border-color: transparent; }
+  .BannerWrap .SliderBanner .BannerMinWrap .BannerInner .Banner_head {
+    font-size: 50px; }
+  .BannerWrap .SliderBanner .BannerMinWrap .BannerInner .BannerPrag {
+    font-size: 14px; }
+  .BannerWrap .SliderBanner .BannerMinWrap .BannerInner .ButtonWrap .ButtoN {
+    padding: 8px 23px; }
+  .cardWrap .CardGrig.CardGridCTM {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%; }
+  .cardWrap .CardGrig .CardItemsIMG {
+    padding-right: 0px;
+    margin: 0;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+  .cardWrap .CardGrig {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%; }
+  .cardWrap .CardGrig .CardItemsIMG {
+    padding-right: 0px;
+    margin: 0;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+  .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM {
+    padding-right: 0px;
+    margin: 0;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  .cardWrap .CardGrig .CardItemsIMG img {
+    width: 100%; }
+  .cardWrap .CardGrig .CardItems {
+    margin-top: 20px;
+    padding-left: 0px;
+    border-left: 0px solid #F7F8F8;
+    text-align: center; }
+  .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM img {
+    width: 100%; }
+  .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM img {
+    width: 100%; }
+  .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM {
+    margin: 0;
+    padding: 0; }
+  .cardWrap .CardGrig .CardItems.ItemsCTM {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-left: 0px;
+    border-left: 0px solid #F7F8F8;
+    text-align: center; }
+  .AboutWrap .AboutGrid {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%; }
+  .NewsWrapper .NewsGrid .NewsGtidItems .card {
+    margin-bottom: 20px; }
   .footerWrap .CtmContiner .footerGrid {
     -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%; }

@@ -24,6 +24,17 @@
             transition: all 0.5s ease;
             cursor: pointer;
             overflow: hidden;
+            img {
+                height: 100%;
+            }
+            &.CardIMGCTM {
+                margin-right: 0px;
+                margin-left: 15px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px; 
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px; 
+            }
         }
         .CardItems {
             padding-left: 15px;
@@ -45,10 +56,21 @@
                     font-size: 16px;
                 }
             }
-            
+            &.ItemsCTM {
+                padding-left: 0px;
+                border-left: 0px solid #F7F8F8;
+                border-right: 2px solid #F7F8F8;
+                padding-right: 15px;
+                text-align: right;
+            }
         }
+       
         &:hover {
             box-shadow: 0 0 30px 0 #00000026;
+        }
+        &.CardGridCTM {
+            grid-template-columns: auto 40%;
+       
         }
     }
 
