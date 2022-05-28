@@ -78,84 +78,150 @@
             }
         }
     }
+  
     .navbar-light {
         .navbar-toggler {
             color: transparent;
             border-color: transparent;
         }
     }
-    
-
-    .BannerWrap .SliderBanner .BannerMinWrap .BannerInner .Banner_head{
-        font-size: 50px;
-    }
-    .BannerWrap .SliderBanner .BannerMinWrap .BannerInner .BannerPrag {
-        font-size: 14px;
-    }
-    .BannerWrap .SliderBanner .BannerMinWrap .BannerInner .ButtonWrap .ButtoN {
-        padding: 8px 23px;
-    }
-    .cardWrap .CardGrig.CardGridCTM {
-        grid-template-columns: 100%;
-    }
-    .cardWrap .CardGrig .CardItemsIMG {
-        padding-right: 0px;
-        margin: 0;
-        border-bottom-right-radius: 0px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    .cardWrap .CardGrig {
-        grid-template-columns: 100%;
-    }
- 
-    .cardWrap .CardGrig .CardItemsIMG {
-        padding-right: 0px;
-        margin: 0;
-        border-bottom-left-radius: 0px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM {
-        padding-right: 0px;
-        margin: 0;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .cardWrap .CardGrig .CardItemsIMG img {
-        width: 100%;
-    }
-    .cardWrap .CardGrig .CardItems {
-        margin-top: 20px;
-        padding-left: 0px;
-        border-left: 0px solid #F7F8F8;
-        text-align: center;
-    }
-    .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM img {
-        width: 100%;
-    }
-    .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM {
-        img {
-            width: 100%;
+    .Header {
+        .navbar {
+            .CtmCont {
+                .NavCollap {
+                    .NavberNav {
+                        .nav-item{
+                            &.language {
+                                .formSelect {
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-    .cardWrap .CardGrig .CardItemsIMG.CardIMGCTM {
-      margin: 0;
-      padding: 0;
+    .navbar-collapse {
+        border-top: 1px solid #ddd;
+        background-color: #000000f2;
     }
-    .cardWrap .CardGrig .CardItems.ItemsCTM {
-        margin-top: 0px;
-        margin-bottom: 20px;
-        padding-left: 0px;
-        border-left: 0px solid #F7F8F8;
-        text-align: center;
+    .BannerWrap {
+        .SliderBanner {
+            .BannerMinWrap {
+                .BannerInner {
+                    .Banner_head{
+                        font-size: 50px;
+                    }
+                    .BannerPrag {
+                        font-size: 14px;
+                    }
+                    .ButtonWrap {
+                        .ButtoN {
+                            padding: 8px 23px;
+                        }
+                    }
+                }
+            }
+        }
     }
-    .AboutWrap .AboutGrid {
-        grid-template-columns: 100%;
+    .cardWrap {
+        .CardGrig {
+            &.CardGridCTM {
+                grid-template-columns: 100%;
+            }
+            .CardItemsIMG {
+                padding-right: 0px;
+                margin: 0;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            grid-template-columns: 100%;
+            .CardItemsIMG {
+                padding-right: 0px;
+                margin: 0;
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+        }
     }
-    .NewsWrapper .NewsGrid .NewsGtidItems .card {
-        margin-bottom: 20px;
+    .cardWrap {
+        .CardGrig {
+            .CardItemsIMG {
+                &.CardIMGCTM {
+                    padding-right: 0px;
+                    margin: 0;
+                    border-top-right-radius: 0px;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+        }
+    }
+    .cardWrap {
+        .CardGrig {
+            .CardItemsIMG {
+                img {
+                    width: 100%;
+                }
+            }
+      
+            .CardItems {
+                margin-top: 20px;
+                padding-left: 0px;
+                border-left: 0px solid #F7F8F8;
+                text-align: center;
+            }
+        }
+       
+    }
+    .cardWrap {
+        .CardGrig {
+            .CardItemsIMG{
+                &.CardIMGCTM {
+                    margin: 0;
+                    padding: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .cardWrap {
+        .CardGrig {
+            .CardItems {
+                &.ItemsCTM {
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                    padding-left: 0px;
+                    border-left: 0px solid #F7F8F8;
+                    text-align: center;
+                }
+                &.ItemsCTM {
+                    border-right: 0px solid #F7F8F8;
+                }
+            }
+        }
+    }
+    .AboutWrap {
+        .AboutGrid { 
+            grid-template-columns: 100%;
+            .AboutImg {
+                min-height: 500px;
+            }
+        }
+    }
+    .NewsWrapper {
+        .NewsGrid {
+            .NewsGtidItems {
+                .card {
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 
     .footerWrap {
@@ -261,18 +327,104 @@
             }
         }
     }
+    .Header {
+        .navbar {
+            .CtmCont {
+                .navbar-brand {
+                    img {
+                        height: 2.1rem;
+                    }
+                }
+            }
+        }
+        
+    }
+    .Header.headerFixed {
+        padding: 0px 0;
+    }
     .navbar-brand {
         margin-left: 10px;
     }
+    .BannerWrap {
+        .SliderBanner {
+            .BannerMinWrap {
+                .BannerInner {
+                    .Banner_head {
+                        font-size: 40px;
+                    }
+                    .ButtonWrap {
+                        .ButtoN {
+                            padding: 5px 20px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
     
+            .main_bannerSlid {
+                .banner_img {
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+    .NewsWrapper {
+        .NewsGrid {
+            .newsItems2 {display: block;
+                .NewsImg {
+                    img {
+                        width: 100%;
+                     }
+                }
+            }
+        }
+    }
+    .NewsWrapper {
+        .NewsGrid {
+            .NewsPRAG {
+                font-size: 18px;
+            }
+            .HEDnewsTitle {
+                font-size: 40px;
+            }
+            .NewsGtidItems {
+                .card {
+                    .card-body {
+                        .card-text {
+                            font-size: 14px;
+                        }
+                        .card-title {
+                            font-size: 18px;
+                        }
+                        .NewsDate {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .AboutWrap {
+        .AboutGrid {
+            .AboutTitle {
+                text-align: center;
+            }
+        }
+    }
     .footerWrap {
+        padding-top: 50px;
         .CtmContiner {
+            padding-bottom: 0px;
             .footerGrid {
                 grid-template-columns:100%;
                 text-align: center;
             }
         }
-        .footerBtm {
+        .footerBtm { 
+            margin-top: 0;
             margin-top: 35px;
             .footerBtmBar {
                 .footerBtmPra {
@@ -306,6 +458,13 @@
     .navbar-toggler-icon {
         height: 25px;
         width: 25px;
+    }
+    .AboutWrap {
+        .AboutGrid {
+            .AboutImg {
+                min-height: 300px;
+            }
+        }
     }
     .up_icon {
         a {
