@@ -1,0 +1,95 @@
+.TacticalBannerWrap {
+    padding: 150px 0 100px;
+    background-color: #282A35;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .TacticalImgWrap {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+        .TacticalInner { 
+            width: 350px;
+            height: 450px;
+            border-radius: 10px;
+            position: relative;
+            border: 2px solid rgb(255, 255, 255);  
+            cursor: pointer;
+            .BacColor {
+                position: absolute;
+                top: -30px;
+                right: -30px;
+                width: 350px;
+                height: 450px;
+                background-color: #101010;
+                border-radius: 10px;
+                .TacticailIMG {
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    overflow: hidden;
+                    width: 350px;
+                    height: 450px;
+                    border-radius: 10px;
+                    transition: all 0.5s ease;
+                  
+                }
+            }
+            &:hover {
+                .BacColor {
+                    .TacticailIMG {
+                        top: -35px;
+                        right: -35px;
+                    }
+                }
+            }
+
+        }
+    }
+    .TacticalTitleWrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .TacticalContaint {
+            .TacticlHead {
+                font-size: 52px;
+                margin-bottom: 20px; 
+                color: #fff;
+            }
+            .TacticlPra {
+                line-height: 1.9;
+                margin-bottom: 30px; 
+                color: #fff;
+            }
+            .TacticlLink {
+                display: initial;
+                color: rgb(201, 201, 201);
+                font-size: 16px;
+                margin-bottom: 20px;
+                transition: all 0.5s ease;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -7px;
+                   right: 0;
+                    width: 0;
+                    height: 2px;
+                    background-color: #fff;
+                    transition: 0.5s ease;
+                }
+                &:hover {
+                    color: #fff;
+                    &::before {
+                        left: auto;
+                        width: 100%; 
+                        left: 0;
+                        transition: 0.5s ease;
+                    }
+                }
+            }
+        }
+       
+    }
+}
