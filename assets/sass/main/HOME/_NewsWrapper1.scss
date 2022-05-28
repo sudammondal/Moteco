@@ -1,19 +1,41 @@
 .NewsWrapper1 {
     background-color: #f0f2f5;
     padding: 60px 0;
+    .HEDnewsTitle {
+        color:#000; 
+        font-size: 3rem;
+        line-height: 1.1; 
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .NewsPRAG {
+        font-size: 3rem; 
+        font-family: 'Jost', sans-serif;
+        font-size: 2.2rem;
+        line-height: 1.5; 
+        font-weight: 500; 
+        color: #000; 
+        text-align: center; 
+        margin-bottom: 40px;
+    }
     .NewsInner{
         border: 1px solid #ddd;
         box-shadow: 0 0 10px 0 #dbdbdb;
         border-radius: 5px;
         overflow: hidden;
+        margin-bottom: 25px;
         .classic { 
             position: relative;
             overflow: hidden;
             width: 100%;
-            .blog_img {
+            .blog_img { 
+                height: 250px;
                 &:focus {
                     outline: none;
                 }
+                   
+                
             }
             .img_overlay {
                 &:before,
@@ -32,7 +54,7 @@
             }
             &:before,
             &::after {
-                background: #b09141;
+                background: #6241b0;
                 width: 25%;
                 position: absolute;
                 content: '';
@@ -72,7 +94,7 @@
             .img_overlay{
                 &::before,
                 &::after {
-                    background: #b09141 !important;
+                    background: #6241b0 !important;
                     width: 25%;
                     position: absolute;
                     content: '';
@@ -99,6 +121,8 @@
         .blog_details {
             padding: 15px;
             background-color: #fff;
+            min-height: 250px;
+            position: relative;
             .time {
                 color: #000;
                 margin-top: 25px;
@@ -121,10 +145,14 @@
                 max-width: 300px;
             }
             a {
-                margin-bottom: 15px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin: 0 0 15px 15px;
                 transition: all 0.5s ease;
+                color: #222;
                 &:hover {
-                    color: red;
+                    color: #6241b0;
                 }
             }
             
