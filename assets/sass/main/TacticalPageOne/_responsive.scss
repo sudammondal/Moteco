@@ -1,0 +1,161 @@
+@media (max-width: 1024px) { 
+    .Header {
+        .navbar {
+            .CtmCont{
+                .navbar-brand {
+                    img {
+                        height: 4.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .TacticalBannerWrap {
+        .TacticalImgWrap {
+            margin-top: 50px;
+            .TacticalInner { 
+                width: 250px;
+                height: 350px;
+                .BacColor {
+                    right: -25px;
+                    width: 250px;
+                    height: 350px;
+                    .TacticailIMG {
+                        position: absolute;
+                        top: -10px;
+                        right: -10px;
+                        width: 250px;
+                        height: 350px;
+                    
+                    }
+                }
+                
+        
+            }
+            
+        }
+        .TacticalTitleWrap {
+            .TacticalContaint{
+                .TacticlHead {
+                    font-size: 40px;
+                }
+            }
+        } 
+    }  
+}
+@media (max-width: 952px) {
+    .TacticalBannerWrap { 
+        height: initial;
+    }
+    .TacticalBannerWrap .TacticalImgWrap {
+        height: 100%;
+    }
+    .TacticalBannerWrap .TacticalImgWrap {
+        margin: 0;
+        
+    }
+    .TacticalBannerWrap .TacticalImgWrap .TacticalInner {
+        left: -40px;
+    }
+} 
+
+@media (max-width: 768px) { 
+    .TacticalBannerWrap {
+
+        padding: 0;
+        .TacticalImgWrap {
+            margin-left: -40px;
+        }
+    }
+    .TacticalBannerWrap {
+        height: 100vh;
+    }
+    .ImplemenWrap .castom_row .HEDnewsTitle {
+        font-size: 40px;
+    }
+    .TacticalBannerWrap .TacticalTitleWrap .TacticalContaint .TacticlHead {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .TacticalBannerWrap .TacticalTitleWrap .TacticalContaint .TacticlPra {
+        margin-bottom: 15px;
+    }
+    .TacticalBannerWrap .TacticalImgWrap .TacticalInner {
+        left: initial;
+    }
+}
+@media (max-width: 720px) { 
+    .TacticalBannerWrap {
+        height: initial;
+        padding: 150px 0 100px;
+    }
+    .TacticalBannerWrap .TacticalTitleWrap .TacticalContaint .TacticlHead {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 412px) { 
+    .TacticalBannerWrap .TacticalImgWrap {
+        margin-top: 110px;
+        margin-bottom: 15px;
+    }
+    .ImplemenWrap .castom_row .HEDnewsTitle {
+        font-size: 40px;
+    }
+    .TacticalBannerWrap .TacticalTitleWrap .TacticalContaint .TacticlHead {
+        font-size: 26px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .TacticalBannerWrap .TacticalTitleWrap .TacticalContaint .TacticlPra {
+        margin-bottom: 15px;  
+        text-align: center;
+    }
+    .TacticalBannerWrap .TacticalTitleWrap {
+        .ButtonWrap {
+            text-align: center;
+        }
+    }
+    .TacticalBannerWrap {
+        height: inherit;
+    }
+    .TacticalBannerWrap {
+        .TacticalImgWrap {
+            margin-top: 50px;
+            .TacticalInner { 
+                width: 200px;
+                height: 300px;
+                .BacColor {
+                    right: -25px;
+                    width: 200px;
+                    height: 300px;
+                    .TacticailIMG {
+                        position: absolute;
+                        top: -10px;
+                        right: -10px;
+                        width: 200px;
+                        height: 300px;
+                    
+                    }
+                }
+                
+        
+            }
+            
+        }
+        .TacticalTitleWrap {
+            .TacticalContaint{
+                .TacticlHead {
+                    font-size: 30px;
+                    margin-top: 40px;
+                }
+            }
+        } 
+    }  
+    .TacticalBannerWrap .TacticalImgWrap .TacticalInner {
+        left: initial;
+    }
+    .TacticalBannerWrap {
+        padding: 100px 0;
+    }
+}

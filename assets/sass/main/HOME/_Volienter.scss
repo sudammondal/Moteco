@@ -1,0 +1,76 @@
+.Volunteers {
+    padding: 90px 0 60px;
+    background-color: #e3e7ec;
+    .VolunteersMain {
+        padding: 37px 27px 39px;
+        transition: all 0.5s;
+        background-color: #fff;
+        box-shadow: 0px 6px 14px 0px #00000024;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        text-align: center;
+        .VolunteersHead {
+            margin: 5px 0 10px;
+            font-size: 20px;
+            padding: 0;
+            font-weight: 600;
+            text-transform: capitalize;
+            line-height: 1.2;
+            color: #333;
+            font-family: 'Jost', sans-serif;
+            
+        }
+        .VolunteersPra {
+            font-size: 16px;
+            margin: 10px 0;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .ReadMore {
+            .red_button {
+                position: relative;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 400;
+                text-transform: capitalize;
+                color: #333;
+                border-bottom: 1px solid transparent;
+                text-transform: uppercase;
+                transition: all 0.5s;
+                display: inline-block;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    right: 0;
+                    width: 0%;
+                    height: 1px;
+                    background: rgb(0, 0, 0);
+                    opacity: 0;
+                    transition: all 0.5s;
+                }
+                &:hover,
+                &.active {
+                    &::before {
+                        width: 100%;
+                        right: auto;
+                        left: 0;
+                        opacity: 1;
+                    }
+                }
+
+            }
+        }
+        .icon_flag {
+            font-size: 34px;
+            color: #000;
+            margin-bottom: 15px;
+        }
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 40px 1px #0000005e;
+        }
+
+    }
+}

@@ -1,77 +1,142 @@
 .cardWrap {
-    padding: 80px 0;
-    background-color: #F7F8F8;
-    .CardGrig {
-        display: grid;
-        grid-template-columns: 40% auto;
-        padding: 30px;
-        background-color: #fff;
-        border-radius: 10px;
-        transition: all 0.5s ease;
-        box-shadow: 0 0 10px 0 #00000026;
-        margin-bottom: 30px;
-        min-height: 300px;
-        height: auto;
-        &:last-child {
-            margin-bottom: 0;
-        }
-        .CardItemsIMG {
-            margin-right: 15px;
-            width: auto;
-            height: 100%;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px; 
+    background-color: #e3e7ec;
+    padding-bottom: 60px;
+    margin-top: -60px;
+    .CtmNewsInner {
+        display: flex;
+        .NewsInner{
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 25px;
             transition: all 0.5s ease;
             cursor: pointer;
-            overflow: hidden;
-            img {
+            z-index: 3;
+           box-shadow: 0px 5px 6px 0px #00000026;;
+            .classic { 
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                .blog_img { 
+                    height: 250px;
+                    transition: all 1s linear;
+                    width: 100%;
+                    &:focus {
+                        outline: none;
+                    } 
+                }
+                .img_overlay {
+                    &:before,
+                    &:after {
+                    background: #b09141;
+                    width: 25%;
+                    position: absolute;
+                    content: '';
+                    opacity: 0;
+                    transition: all 0.3s steps(4);
+                    z-index: 1;
+                    bottom: 100%;
+                    top: 0;
+                    
+                    }
+                }
+                &:before,
+                &::after {
+                    background: #6241b0;
+                    width: 25%;
+                    position: absolute;
+                    content: '';
+                    opacity: 0;
+                    transition: all 0.3s steps(4);
+                    z-index: 1;
+                    bottom: 100%;
+                    top: 0;
+                }
+                &::before {
+                    left: 0;
+                    transition-delay: 0s;
+                }
+                &::after {
+                    left: 25%;
+                    transition-delay: 0.025s !important;
+                }
+                .img_overlay {
+                    &::before {
+                        left: 50%;
+                        transition-delay: 0.05s !important;
+                    }
+                }
+                .img_overlay {
+                    &::after {
+                        left: 75%;
+                        transition-delay: 0.15s !important;
+                    }
+                }
+                &:hover {
+                    &::before,
+                    &::after {
+                        bottom: 0;
+                        opacity: 0.5;
+                    }
+                    .blog_img {
+                        transform: scale(1.2);
+                    }
+                }
+                .img_overlay{
+                    &::before,
+                    &::after {
+                        background: #6241b0 !important;
+                        width: 25%;
+                        position: absolute;
+                        content: '';
+                        opacity: 0;
+                        -webkit-transition: all 0.3s steps(4);
+                        transition: all 0.3s steps(4);
+                        z-index: 1;
+                        bottom: 100%;
+                        top: 0;
+                    }
+                }
+                &:hover {
+                    .img_overlay{
+                        &::before,
+                        &::after {
+                            bottom: 0;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+            .blog_details {
+                padding: 15px;
+                background-color: #fff;
                 height: 100%;
-            }
-            &.CardIMGCTM {
-                margin-right: 0px;
-                margin-left: 15px;
-                border-top-left-radius: 0px;
-                border-bottom-left-radius: 0px; 
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px; 
-            }
-        }
-        .CardItems {
-            padding-left: 15px;
-            border-left: 2px solid #F7F8F8;
-            display: flex;
-            align-items: center;
-            .TitleWrap {
-                .CArdHead {
-                    font-family: 'Jost', sans-serif;
-                    font-size: 2.2rem;
-                    line-height: 1.5;
-                    font-weight: 700;
-                }
-                .CardINNERpra {
-                    font-family: 'Oxygen', sans-serif;
-                    line-height: 2;
+                .time {
                     color: #000;
-                    font-weight: 500;
-                    font-size: 16px;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    letter-spacing: 0.03em;
+                    font-family: 'Jost', sans-serif;
+                    font-size: 26px;
+                    line-height: 1.5;
+                    margin: 5px 0;
+                }
+                .lang_blog {
+                    color: #222;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.03em;
+                    margin-top: 10px;
+                    transition: all 0.5s ease;
+                    font-family: 'Oxygen', sans-serif;
                 }
             }
-            &.ItemsCTM {
-                padding-left: 0px;
-                border-left: 0px solid #F7F8F8;
-                border-right: 2px solid #F7F8F8;
-                padding-right: 15px;
-                text-align: right;
+            &:hover {
+                box-shadow: 0px 10px 30px 0px #00000026;
             }
-        }
-       
-        &:hover {
-            box-shadow: 0 0 30px 0 #00000026;
-        }
-        &.CardGridCTM {
-            grid-template-columns: auto 40%;
-       
         }
     }
-
+   
+    
 }

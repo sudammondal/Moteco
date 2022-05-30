@@ -1,3 +1,105 @@
+@media (max-width: 1200px) {
+    .Header{
+         background-color: #000;
+         &.headerFixed {
+            background-color: #000;
+            .navbar {
+                .CtmCont {
+                    .navbar-brand {
+                        img {
+                            height: 4.5rem;
+                        } 
+                    }
+                }
+                
+            }
+
+        }
+        .navbar {
+            .CtmCont {
+                padding: 0 20px;
+                .NavCollap {
+                    .NavberNav {
+                        .nav-item.language{
+                            .formSelect {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        padding: 0 20px;
+    }
+}
+@media (max-width: 1024px) {
+    .TestimonialWrap {
+        .TestContaint {
+            padding-bottom: 0;
+            .TestHeadTitle {
+                font-size: 30px;
+            }
+            .TestPrag {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .AboutWrap {
+        .AboutGrid {
+            .AboutTitle {
+                padding: 20px;
+            }
+        }
+    }
+  
+}
+@media (max-width: 992px) {
+    .Header { 
+        background-color: #000;
+        .navbar {
+            .CtmCont {
+                .navbar-brand {
+                    img {
+                        height: 3.5rem; 
+                    }
+                }
+                .NavCollap {
+                    .NavberNav {
+                        text-align: center;
+                    }
+                }
+               
+            }
+        }
+        &.headerFixed {
+            background-color: #000;
+            .navbar {
+                .CtmCont {
+                    .navbar-brand {
+                        img {
+                            height: 3.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .NewsWrapper {
+        .NewsGrid {
+            .NewsGtidItems {
+                .card {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+    .navbar-collapse {
+        border-top: 1px solid #ddd;
+    }
+    
+}
 
 @media (max-width: 920px) {
     .Header {
@@ -19,12 +121,16 @@
                             .nav-link {
                                 margin-left: 14px;
                             }
+                            .formSelect {
+                                display: initial;
+                            }
                         }
                     }
                 }
             }
         }
     }
+    
     .navbar-light {
         .navbar-toggler {
             color: transparent;
@@ -39,7 +145,7 @@
     .navbar-collapse {
         border-top: 1px solid #ddd;
     }
-   
+    
 }
 
 @media (max-width: 768px) {
@@ -200,6 +306,9 @@
             }
         }
     }
+    .AboutWrap .AboutGrid .AboutTitle {
+        padding: 20px;
+    }
     .AboutWrap {
         .AboutGrid { 
             grid-template-columns: 100%;
@@ -217,7 +326,29 @@
             }
         }
     }
-
+    .TestimonialWrap {
+        .TestContaint {
+            padding-bottom: 0;
+            .TestHeadTitle {
+                font-size: 30px;
+            }
+            .TestPrag {
+                margin-bottom: 0;
+            }
+        }
+  
+        .testmonials_slied {
+            overflow-x: hidden;
+            .main_slieda_ttstmonials {
+                .test_slid_items {
+                    .slid_pra2 {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+   
     .footerWrap {
         .CtmContiner {
             .footerGrid {
@@ -259,7 +390,6 @@
         }
     } 
 }
-
 @media (max-width: 570px) {
     .navbar-brand {
         margin-left: 10px;
@@ -267,6 +397,12 @@
     .navbar-light {
         .navbar-toggler {
             padding-right: 15px;
+        }
+    }
+    .TestimonialWrap {
+        .TestContaint {
+            text-align: center;
+           
         }
     }
 }
@@ -431,7 +567,11 @@
 }
 @media (max-width: 320px) {
     .Header {
+        &.headerFixed {
+            padding: 8px;
+        }
         .navbar {
+            padding: 8px;
             .CtmCont {
                 .NavCollap {
                     .NavberNav {

@@ -10,18 +10,18 @@
        align-items: center;
        justify-content: center;
         .TacticalInner { 
-            width: 350px;
-            height: 450px;
+            width: 300px;
+            height: 400px;
             border-radius: 10px;
             position: relative;
             border: 2px solid rgb(255, 255, 255);  
             cursor: pointer;
             .BacColor {
                 position: absolute;
-                top: -30px;
-                right: -30px;
-                width: 350px;
-                height: 450px;
+                top: -25px;
+                right: -25px;
+                width: 300px;
+                height: 400px;
                 background-color: #101010;
                 border-radius: 10px;
                 .TacticailIMG {
@@ -29,8 +29,8 @@
                     top: -10px;
                     right: -10px;
                     overflow: hidden;
-                    width: 350px;
-                    height: 450px;
+                    width: 300px;
+                    height: 400px;
                     border-radius: 10px;
                     transition: all 0.5s ease;
                   
@@ -39,8 +39,8 @@
             &:hover {
                 .BacColor {
                     .TacticailIMG {
-                        top: -35px;
-                        right: -35px;
+                        top: -25px;
+                        right: -25px;
                     }
                 }
             }
@@ -62,32 +62,37 @@
                 margin-bottom: 30px; 
                 color: #fff;
             }
-            .TacticlLink {
-                display: initial;
-                color: rgb(201, 201, 201);
-                font-size: 16px;
-                margin-bottom: 20px;
-                transition: all 0.5s ease;
-                position: relative;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    bottom: -7px;
-                   right: 0;
-                    width: 0;
-                    height: 2px;
-                    background-color: #fff;
+            .ButtonWrap {
+                .ButtoN {
+                    background-color: #ffffff;
+                    border: 1px solid #ffffff;
+                    text-shadow: none;
+                    border-radius: 25px;
+                    color: #000;
+                    text-align: center;
+                    padding: 10px 30px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    cursor: pointer;
+                    line-height: 1.4285;
+                    text-transform: uppercase;
+                    position: relative;
+                    z-index: 1;
+                    overflow: hidden;
                     transition: 0.5s ease;
-                }
-                &:hover {
-                    color: #fff;
-                    &::before {
-                        left: auto;
-                        width: 100%; 
-                        left: 0;
-                        transition: 0.5s ease;
+                    outline: none;
+                    display: inline-block;
+                    box-shadow: 0 2px 2px 0 #00000033;
+                    margin-top: 10px;
+                    &:hover {
+                        color: #fff;
+                        box-shadow: 0 2px 2px 0 #00000033;
+                        transform: scale(1.05); 
+                        border: 1px solid #b09141;
+                        background-color: #b09141;
                     }
                 }
+    
             }
         }
        

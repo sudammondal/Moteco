@@ -1,64 +1,46 @@
 $(document).ready(function () {
-    function headerAutoHedeOnScroll(selector) {
-        var prevScrollpos = window.pageYOffset;
-        var headerHeight = $(selector).height();
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                $(selector).css({
-                    "top": '0'
-                })
-            } else {
-                $(selector).css({
-                    "top": `-${headerHeight}px`
-                })
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    }
-    // headerAutoHedeOnScroll('.Header');
 
-    // slider js// 
-    // $('.main_slieda_ttstmonials').slick({
-    //     autoplay: true,
-    //     slidesToScroll: 1,
-    //     slidesToShow: 1,
-    //     centerPadding: '0',
-    //     centerMode: false,
-    //     dots: true,
-    //     arrows: false,
-    //     infinite: true,
-    //     speed: 1500,
-    //     responsive: [{
-    //         breakpoint: 1024,
-    //         settings: {
-    //             slidesToShow: 1,
-    //             dots: false,
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 767,
-    //         settings: {
-    //             slidesToShow: 1,
-    //             dots: false,
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 600,
-    //         settings: {
-    //             slidesToShow: 1,
-    //             dots: false,
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 480,
-    //         settings: {
-    //             slidesToShow: 1,
-    //             dots: false,
-    //         }
-    //     }
-    //     ]
-    // });
+    $('.main_slieda_ttstmonials').slick({
+        autoplay: true,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        centerPadding: '0',
+        centerMode: false,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 1500,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    dots: false,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    dots: false,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    dots: false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    dots: false,
+                }
+            }
+        ]
+    });
+
 
     // /*---------LIGHT-BOX js-----------*/
     // function lightBoxImages() {
@@ -110,6 +92,29 @@ $(document).ready(function () {
             $("#FixedScrol").removeClass("headerFixed");
             $(".up_icon").removeClass("up_iconFixd");
         }
+    });
+    /*---------LIGHT-BOX js-----------*/
+	function lightBoxImages() {
+		var selectorG = '.icon_link';
+		if ($(selectorG).length) {
+			var instanceG = $(selectorG).imageLightbox({
+				quitOnDocClick: false
+				, button: true
+				, activity: true
+				, overlay: true
+				, arrows: true
+				, preloadNext: true
+			, });
+		}
+	}
+	lightBoxImages();
+
+     // counting ja //
+     jQuery(document).ready(function($) {
+        $('.counting').counterUp({
+            delay: 10,
+            time: 1000
+        });
     });
 
 
