@@ -10,7 +10,8 @@ body {
   font-family: 'Lato', "sans-serif";
   background-color: #fff;
   font-size: 16px;
-  line-height: 25px; }
+  line-height: 25px;
+  position: relative; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: 'Jost', sans-serif; }
   body a {
@@ -193,7 +194,8 @@ body {
 
 .footerWrap {
   background-color: #000000f0;
-  padding-top: 40px; }
+  padding-top: 40px;
+  margin-bottom: 58px; }
   .footerWrap .CtmContiner {
     padding-bottom: 30px; }
     .footerWrap .CtmContiner .footerGrid {
@@ -215,20 +217,20 @@ body {
           color: #fff;
           font-weight: 700;
           margin-top: 0;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
           font-family: 'Oxygen', sans-serif;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           line-height: 1.5; }
         .footerWrap .CtmContiner .footerGrid .FooterInner .FooterSubmit .submitHeadSub {
           margin-bottom: 15px; }
         .footerWrap .CtmContiner .footerGrid .FooterInner .FooterSubmit .footerPra {
           font-family: 'Oxygen', sans-serif;
-          font-size: 15px;
-          line-height: 1.5;
+          font-size: 14px;
+          line-height: 1.4;
           margin-bottom: 20px;
           color: #fff; }
           .footerWrap .CtmContiner .footerGrid .FooterInner .FooterSubmit .footerPra .FooterLink {
-            margin-top: 10px;
+            margin-top: 5px;
             color: #fff; }
         .footerWrap .CtmContiner .footerGrid .FooterInner .FooterSubmit .FooTerICon .FterIcon {
           padding: 10px;
@@ -246,8 +248,8 @@ body {
           margin-right: 0.5rem;
           margin-bottom: 1rem;
           padding: 0.5rem;
-          height: 2.5rem;
-          width: 2.5rem;
+          height: 2rem;
+          width: 2rem;
           -webkit-transition: all 0.5s ease;
           -o-transition: all 0.5s ease;
           transition: all 0.5s ease; }
@@ -280,7 +282,7 @@ body {
   position: fixed;
   bottom: 10px;
   right: 18px;
-  z-index: 1;
+  z-index: 10;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
@@ -307,9 +309,9 @@ body {
     background-color: rgba(0, 0, 0, 0.5); }
 
 .up_iconFixd {
-  bottom: 18px;
+  bottom: 73px;
   right: 18px;
-  z-index: 1;
+  z-index: 10;
   opacity: 1; }
 
 .BannerWrap .SliderBanner {
@@ -329,7 +331,8 @@ body {
     background-color: #141b2291;
     z-index: 2; }
   .BannerWrap .SliderBanner .main_bannerSlid .banner_img {
-    height: 100vh; }
+    height: 100vh;
+    overflow-x: hidden; }
     .BannerWrap .SliderBanner .main_bannerSlid .banner_img img {
       width: 100% !important;
       height: 100vh;
@@ -879,6 +882,46 @@ body {
       .TestimonialWrap .testmonials_slied:hover .slick-arrow.slick-next {
         right: -25px; }
 
+.LatestNewsWrap {
+  background-color: red;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 77; }
+  .LatestNewsWrap .LatestNews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    margin: 0 20px; }
+    .LatestNewsWrap .LatestNews .latestLeft h4 {
+      min-width: 150px;
+      font-size: 20px;
+      margin: 0 0 0 15px; }
+    .LatestNewsWrap .LatestNews .newsInner {
+      width: 100%; }
+      .LatestNewsWrap .LatestNews .newsInner marquee .LinkAll {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .LatestNewsWrap .LatestNews .newsInner marquee .LinkAll a {
+          padding: 20px 0 5px;
+          font-size: 16px;
+          color: #fff;
+          margin-right: 20px; }
+
 /*============Responsive============*/
 @media (max-width: 1200px) {
   .Header {
@@ -1012,13 +1055,13 @@ body {
     text-align: center; }
   .cardWrap .CardGrig .CardItems.ItemsCTM {
     border-right: 0px solid #F7F8F8; }
-  .AboutWrap .AboutGrid .AboutTitle {
-    padding: 20px; }
   .AboutWrap .AboutGrid {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%; }
     .AboutWrap .AboutGrid .AboutImg {
       min-height: 500px; }
+    .AboutWrap .AboutGrid .AboutTitle {
+      padding: 20px; }
   .NewsWrapper .NewsGrid .NewsGtidItems .card {
     margin-bottom: 20px; }
   .TestimonialWrap .TestContaint {
@@ -1050,8 +1093,14 @@ body {
     margin-left: 10px; }
   .navbar-light .navbar-toggler {
     padding-right: 15px; }
-  .TestimonialWrap .TestContaint {
-    text-align: center; } }
+  .TestimonialWrap {
+    padding: 40px 0; }
+    .TestimonialWrap .TestContaint {
+      text-align: center; }
+    .TestimonialWrap .testmonials_slied {
+      padding: 15px 0 0px; }
+  .NewsWrapper {
+    padding: 40px 0 20px; } }
 
 @media (max-width: 540px) {
   .footerWrap .CtmContiner .footerGrid .FooterInner .footerSaport {

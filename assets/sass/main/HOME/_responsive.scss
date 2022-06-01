@@ -306,14 +306,14 @@
             }
         }
     }
-    .AboutWrap .AboutGrid .AboutTitle {
-        padding: 20px;
-    }
     .AboutWrap {
         .AboutGrid { 
             grid-template-columns: 100%;
             .AboutImg {
                 min-height: 500px;
+            }
+            .AboutTitle {
+                padding: 20px;
             }
         }
     }
@@ -348,6 +348,7 @@
             }
         }
     }
+
    
     .footerWrap {
         .CtmContiner {
@@ -400,10 +401,17 @@
         }
     }
     .TestimonialWrap {
+        padding: 40px 0;
         .TestContaint {
             text-align: center;
            
         }
+        .testmonials_slied {
+            padding: 15px 0 0px;
+        }
+    }
+    .NewsWrapper {
+        padding: 40px 0 20px;
     }
 }
 @media (max-width: 540px) {

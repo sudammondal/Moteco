@@ -20,6 +20,7 @@
         .main_bannerSlid { 
             .banner_img {
                 height: 100vh;
+                overflow-x: hidden;
                 img {
                     width: 100% !important;
                     height: 100vh;
